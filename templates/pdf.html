@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <table>
+        <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Father_Name</th>
+        </tr></thead>
+        {% for student in student_objs %}
+        <tr>
+          <td>{{student.name}}
+          </td>
+          <td>{{student.age}}</td>
+          <td>{{student.father_name}}</td>
+        </tr>
+        {% endfor %}
+      </table>
+</body>
+</html>
